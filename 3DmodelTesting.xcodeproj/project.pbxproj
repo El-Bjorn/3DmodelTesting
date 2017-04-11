@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4030BFEF18CA43E900EF4269 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030BFEE18CA43E900EF4269 /* Foundation.framework */; };
+		4030BFF118CA43E900EF4269 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030BFF018CA43E900EF4269 /* CoreGraphics.framework */; };
+		4030BFF318CA43E900EF4269 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030BFF218CA43E900EF4269 /* UIKit.framework */; };
+		4030BFF918CA43E900EF4269 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4030BFF718CA43E900EF4269 /* InfoPlist.strings */; };
+		4030BFFB18CA43E900EF4269 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030BFFA18CA43E900EF4269 /* main.m */; };
+		4030BFFF18CA43E900EF4269 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030BFFE18CA43E900EF4269 /* AppDelegate.m */; };
+		4030C00218CA43E900EF4269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4030C00018CA43E900EF4269 /* Main.storyboard */; };
+		4030C00518CA43E900EF4269 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030C00418CA43E900EF4269 /* ViewController.m */; };
+		4030C00718CA43E900EF4269 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4030C00618CA43E900EF4269 /* Images.xcassets */; };
+		4030C00E18CA43E900EF4269 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030C00D18CA43E900EF4269 /* XCTest.framework */; };
+		4030C00F18CA43E900EF4269 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030BFEE18CA43E900EF4269 /* Foundation.framework */; };
+		4030C01018CA43E900EF4269 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030BFF218CA43E900EF4269 /* UIKit.framework */; };
+		4030C01818CA43EA00EF4269 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4030C01618CA43EA00EF4269 /* InfoPlist.strings */; };
+		4030C01A18CA43EA00EF4269 /* _DmodelTestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030C01918CA43EA00EF4269 /* _DmodelTestingTests.m */; };
+		4030C02418CA458A00EF4269 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030C02318CA458A00EF4269 /* OpenGLES.framework */; };
+		4030C02618CA459400EF4269 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030C02518CA459400EF4269 /* QuartzCore.framework */; };
+		4030C02818CA470F00EF4269 /* NinevehGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030C02718CA470E00EF4269 /* NinevehGL.framework */; };
+		4030C03818CA47E100EF4269 /* RayGunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030C03718CA47E100EF4269 /* RayGunViewController.m */; };
+		4030C03B18CA47F900EF4269 /* CubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030C03A18CA47F900EF4269 /* CubeViewController.m */; };
+		4030C03E18CA480700EF4269 /* WorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030C03D18CA480700EF4269 /* WorldViewController.m */; };
+		4030C04818CA4C0300EF4269 /* earth.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 4030C04518CA4C0300EF4269 /* earth.mtl */; };
+		4030C04918CA4C0300EF4269 /* earth.obj in Resources */ = {isa = PBXBuildFile; fileRef = 4030C04618CA4C0300EF4269 /* earth.obj */; };
+		4030C04A18CA4C0300EF4269 /* earthWithCloudsMap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4030C04718CA4C0300EF4269 /* earthWithCloudsMap.jpg */; };
+		4030C05418CA4DDD00EF4269 /* cube.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4030C05318CA4DDD00EF4269 /* cube.dae */; };
+		4030C05618CA5E9400EF4269 /* Alien_Gun.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4030C05518CA5E9400EF4269 /* Alien_Gun.dae */; };
+		4030C05A18CA60B400EF4269 /* alien.png in Resources */ = {isa = PBXBuildFile; fileRef = 4030C05918CA60B400EF4269 /* alien.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4030C01118CA43EA00EF4269 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4030BFE318CA43E900EF4269 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4030BFEA18CA43E900EF4269;
+			remoteInfo = 3DmodelTesting;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4030BFEB18CA43E900EF4269 /* 3DmodelTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DmodelTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4030BFEE18CA43E900EF4269 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4030BFF018CA43E900EF4269 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4030BFF218CA43E900EF4269 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4030BFF618CA43E900EF4269 /* 3DmodelTesting-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "3DmodelTesting-Info.plist"; sourceTree = "<group>"; };
+		4030BFF818CA43E900EF4269 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4030BFFA18CA43E900EF4269 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4030BFFC18CA43E900EF4269 /* 3DmodelTesting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "3DmodelTesting-Prefix.pch"; sourceTree = "<group>"; };
+		4030BFFD18CA43E900EF4269 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4030BFFE18CA43E900EF4269 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4030C00118CA43E900EF4269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4030C00318CA43E900EF4269 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4030C00418CA43E900EF4269 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4030C00618CA43E900EF4269 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4030C00C18CA43E900EF4269 /* 3DmodelTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DmodelTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4030C00D18CA43E900EF4269 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4030C01518CA43EA00EF4269 /* 3DmodelTestingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "3DmodelTestingTests-Info.plist"; sourceTree = "<group>"; };
+		4030C01718CA43EA00EF4269 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4030C01918CA43EA00EF4269 /* _DmodelTestingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _DmodelTestingTests.m; sourceTree = "<group>"; };
+		4030C02318CA458A00EF4269 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4030C02518CA459400EF4269 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4030C02718CA470E00EF4269 /* NinevehGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NinevehGL.framework; path = "../../../../../Library/Developer/Xcode/Templates/Project Templates/NinevehGL/NinevehGL Base.xctemplate/Frameworks/NinevehGL.framework"; sourceTree = "<group>"; };
+		4030C03618CA47E100EF4269 /* RayGunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayGunViewController.h; sourceTree = "<group>"; };
+		4030C03718CA47E100EF4269 /* RayGunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayGunViewController.m; sourceTree = "<group>"; };
+		4030C03918CA47F900EF4269 /* CubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeViewController.h; sourceTree = "<group>"; };
+		4030C03A18CA47F900EF4269 /* CubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeViewController.m; sourceTree = "<group>"; };
+		4030C03C18CA480700EF4269 /* WorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldViewController.h; sourceTree = "<group>"; };
+		4030C03D18CA480700EF4269 /* WorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldViewController.m; sourceTree = "<group>"; };
+		4030C04518CA4C0300EF4269 /* earth.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = earth.mtl; sourceTree = "<group>"; };
+		4030C04618CA4C0300EF4269 /* earth.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = earth.obj; sourceTree = "<group>"; };
+		4030C04718CA4C0300EF4269 /* earthWithCloudsMap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earthWithCloudsMap.jpg; sourceTree = "<group>"; };
+		4030C05318CA4DDD00EF4269 /* cube.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = cube.dae; sourceTree = "<group>"; };
+		4030C05518CA5E9400EF4269 /* Alien_Gun.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Alien_Gun.dae; sourceTree = "<group>"; };
+		4030C05918CA60B400EF4269 /* alien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4030BFE818CA43E900EF4269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4030C02818CA470F00EF4269 /* NinevehGL.framework in Frameworks */,
+				4030C02618CA459400EF4269 /* QuartzCore.framework in Frameworks */,
+				4030C02418CA458A00EF4269 /* OpenGLES.framework in Frameworks */,
+				4030BFF118CA43E900EF4269 /* CoreGraphics.framework in Frameworks */,
+				4030BFF318CA43E900EF4269 /* UIKit.framework in Frameworks */,
+				4030BFEF18CA43E900EF4269 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4030C00918CA43E900EF4269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4030C00E18CA43E900EF4269 /* XCTest.framework in Frameworks */,
+				4030C01018CA43E900EF4269 /* UIKit.framework in Frameworks */,
+				4030C00F18CA43E900EF4269 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4030BFE218CA43E900EF4269 = {
+			isa = PBXGroup;
+			children = (
+				4030BFF418CA43E900EF4269 /* 3DmodelTesting */,
+				4030BFF518CA43E900EF4269 /* Supporting Files */,
+				4030C01318CA43EA00EF4269 /* 3DmodelTestingTests */,
+				4030BFED18CA43E900EF4269 /* Frameworks */,
+				4030BFEC18CA43E900EF4269 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4030BFEC18CA43E900EF4269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4030BFEB18CA43E900EF4269 /* 3DmodelTesting.app */,
+				4030C00C18CA43E900EF4269 /* 3DmodelTestingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4030BFED18CA43E900EF4269 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4030C02718CA470E00EF4269 /* NinevehGL.framework */,
+				4030C02518CA459400EF4269 /* QuartzCore.framework */,
+				4030C02318CA458A00EF4269 /* OpenGLES.framework */,
+				4030BFEE18CA43E900EF4269 /* Foundation.framework */,
+				4030BFF018CA43E900EF4269 /* CoreGraphics.framework */,
+				4030BFF218CA43E900EF4269 /* UIKit.framework */,
+				4030C00D18CA43E900EF4269 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4030BFF418CA43E900EF4269 /* 3DmodelTesting */ = {
+			isa = PBXGroup;
+			children = (
+				4030C02918CA474800EF4269 /* 3Dmodels */,
+				4030BFFD18CA43E900EF4269 /* AppDelegate.h */,
+				4030BFFE18CA43E900EF4269 /* AppDelegate.m */,
+				4030C00018CA43E900EF4269 /* Main.storyboard */,
+				4030C00318CA43E900EF4269 /* ViewController.h */,
+				4030C00418CA43E900EF4269 /* ViewController.m */,
+				4030C00618CA43E900EF4269 /* Images.xcassets */,
+				4030C03618CA47E100EF4269 /* RayGunViewController.h */,
+				4030C03718CA47E100EF4269 /* RayGunViewController.m */,
+				4030C03918CA47F900EF4269 /* CubeViewController.h */,
+				4030C03A18CA47F900EF4269 /* CubeViewController.m */,
+				4030C03C18CA480700EF4269 /* WorldViewController.h */,
+				4030C03D18CA480700EF4269 /* WorldViewController.m */,
+			);
+			path = 3DmodelTesting;
+			sourceTree = "<group>";
+		};
+		4030BFF518CA43E900EF4269 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4030BFF618CA43E900EF4269 /* 3DmodelTesting-Info.plist */,
+				4030BFF718CA43E900EF4269 /* InfoPlist.strings */,
+				4030BFFA18CA43E900EF4269 /* main.m */,
+				4030BFFC18CA43E900EF4269 /* 3DmodelTesting-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = 3DmodelTesting;
+			sourceTree = "<group>";
+		};
+		4030C01318CA43EA00EF4269 /* 3DmodelTestingTests */ = {
+			isa = PBXGroup;
+			children = (
+				4030C01918CA43EA00EF4269 /* _DmodelTestingTests.m */,
+				4030C01418CA43EA00EF4269 /* Supporting Files */,
+			);
+			path = 3DmodelTestingTests;
+			sourceTree = "<group>";
+		};
+		4030C01418CA43EA00EF4269 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4030C01518CA43EA00EF4269 /* 3DmodelTestingTests-Info.plist */,
+				4030C01618CA43EA00EF4269 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4030C02918CA474800EF4269 /* 3Dmodels */ = {
+			isa = PBXGroup;
+			children = (
+				4030C05918CA60B400EF4269 /* alien.png */,
+				4030C05518CA5E9400EF4269 /* Alien_Gun.dae */,
+				4030C05318CA4DDD00EF4269 /* cube.dae */,
+				4030C04518CA4C0300EF4269 /* earth.mtl */,
+				4030C04618CA4C0300EF4269 /* earth.obj */,
+				4030C04718CA4C0300EF4269 /* earthWithCloudsMap.jpg */,
+			);
+			name = 3Dmodels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4030BFEA18CA43E900EF4269 /* 3DmodelTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4030C01D18CA43EA00EF4269 /* Build configuration list for PBXNativeTarget "3DmodelTesting" */;
+			buildPhases = (
+				4030BFE718CA43E900EF4269 /* Sources */,
+				4030BFE818CA43E900EF4269 /* Frameworks */,
+				4030BFE918CA43E900EF4269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 3DmodelTesting;
+			productName = 3DmodelTesting;
+			productReference = 4030BFEB18CA43E900EF4269 /* 3DmodelTesting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4030C00B18CA43E900EF4269 /* 3DmodelTestingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4030C02018CA43EA00EF4269 /* Build configuration list for PBXNativeTarget "3DmodelTestingTests" */;
+			buildPhases = (
+				4030C00818CA43E900EF4269 /* Sources */,
+				4030C00918CA43E900EF4269 /* Frameworks */,
+				4030C00A18CA43E900EF4269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4030C01218CA43EA00EF4269 /* PBXTargetDependency */,
+			);
+			name = 3DmodelTestingTests;
+			productName = 3DmodelTestingTests;
+			productReference = 4030C00C18CA43E900EF4269 /* 3DmodelTestingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4030BFE318CA43E900EF4269 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = BjornC;
+				TargetAttributes = {
+					4030C00B18CA43E900EF4269 = {
+						TestTargetID = 4030BFEA18CA43E900EF4269;
+					};
+				};
+			};
+			buildConfigurationList = 4030BFE618CA43E900EF4269 /* Build configuration list for PBXProject "3DmodelTesting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4030BFE218CA43E900EF4269;
+			productRefGroup = 4030BFEC18CA43E900EF4269 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4030BFEA18CA43E900EF4269 /* 3DmodelTesting */,
+				4030C00B18CA43E900EF4269 /* 3DmodelTestingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4030BFE918CA43E900EF4269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4030C04918CA4C0300EF4269 /* earth.obj in Resources */,
+				4030C04818CA4C0300EF4269 /* earth.mtl in Resources */,
+				4030C00718CA43E900EF4269 /* Images.xcassets in Resources */,
+				4030C05418CA4DDD00EF4269 /* cube.dae in Resources */,
+				4030C04A18CA4C0300EF4269 /* earthWithCloudsMap.jpg in Resources */,
+				4030C05618CA5E9400EF4269 /* Alien_Gun.dae in Resources */,
+				4030BFF918CA43E900EF4269 /* InfoPlist.strings in Resources */,
+				4030C05A18CA60B400EF4269 /* alien.png in Resources */,
+				4030C00218CA43E900EF4269 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4030C00A18CA43E900EF4269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4030C01818CA43EA00EF4269 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4030BFE718CA43E900EF4269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4030C00518CA43E900EF4269 /* ViewController.m in Sources */,
+				4030C03B18CA47F900EF4269 /* CubeViewController.m in Sources */,
+				4030BFFF18CA43E900EF4269 /* AppDelegate.m in Sources */,
+				4030C03E18CA480700EF4269 /* WorldViewController.m in Sources */,
+				4030BFFB18CA43E900EF4269 /* main.m in Sources */,
+				4030C03818CA47E100EF4269 /* RayGunViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4030C00818CA43E900EF4269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4030C01A18CA43EA00EF4269 /* _DmodelTestingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4030C01218CA43EA00EF4269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4030BFEA18CA43E900EF4269 /* 3DmodelTesting */;
+			targetProxy = 4030C01118CA43EA00EF4269 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4030BFF718CA43E900EF4269 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4030BFF818CA43E900EF4269 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4030C00018CA43E900EF4269 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4030C00118CA43E900EF4269 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4030C01618CA43EA00EF4269 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4030C01718CA43EA00EF4269 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4030C01B18CA43EA00EF4269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4030C01C18CA43EA00EF4269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4030C01E18CA43EA00EF4269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_DEVELOPER_DIR)/Xcode/Templates/Project\\ Templates/NinevehGL/NinevehGL\\ Base.xctemplate/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "3DmodelTesting/3DmodelTesting-Prefix.pch";
+				INFOPLIST_FILE = "3DmodelTesting/3DmodelTesting-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4030C01F18CA43EA00EF4269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_DEVELOPER_DIR)/Xcode/Templates/Project\\ Templates/NinevehGL/NinevehGL\\ Base.xctemplate/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "3DmodelTesting/3DmodelTesting-Prefix.pch";
+				INFOPLIST_FILE = "3DmodelTesting/3DmodelTesting-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4030C02118CA43EA00EF4269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/3DmodelTesting.app/3DmodelTesting";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "3DmodelTesting/3DmodelTesting-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "3DmodelTestingTests/3DmodelTestingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4030C02218CA43EA00EF4269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/3DmodelTesting.app/3DmodelTesting";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "3DmodelTesting/3DmodelTesting-Prefix.pch";
+				INFOPLIST_FILE = "3DmodelTestingTests/3DmodelTestingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4030BFE618CA43E900EF4269 /* Build configuration list for PBXProject "3DmodelTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4030C01B18CA43EA00EF4269 /* Debug */,
+				4030C01C18CA43EA00EF4269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4030C01D18CA43EA00EF4269 /* Build configuration list for PBXNativeTarget "3DmodelTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4030C01E18CA43EA00EF4269 /* Debug */,
+				4030C01F18CA43EA00EF4269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4030C02018CA43EA00EF4269 /* Build configuration list for PBXNativeTarget "3DmodelTestingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4030C02118CA43EA00EF4269 /* Debug */,
+				4030C02218CA43EA00EF4269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4030BFE318CA43E900EF4269 /* Project object */;
+}
